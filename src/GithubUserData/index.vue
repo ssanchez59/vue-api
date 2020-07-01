@@ -11,7 +11,8 @@
       {{ data.Servers_changed }}
     </p>
     <p>
-      <b>SSL Grade: {{ data.Ssl_grade }}</b>
+      <b>SSL Grade:</b>
+      {{ data.Ssl_grade }}
     </p>
     <p>
       <b>Previous SSL Grade:</b>
