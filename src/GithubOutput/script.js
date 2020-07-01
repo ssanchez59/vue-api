@@ -28,7 +28,7 @@ export default {
       // if we have data already, don't request again
       if (this.githubData.hasOwnProperty(name)) return;
 
-      const url = `http://localhost:8000/hello/${name}`;
+      const url = `http://localhost:8000/search/${name}`;
       axios.get(url).then((r) => {
         Vue.set(this.githubData, name, r.data);
       });
