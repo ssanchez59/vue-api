@@ -2,10 +2,10 @@
   <div v-if="data">
     <h4>{{ data.name }}</h4>
 
-    <p>
+    <div>
       <b>Servers:</b>
-      {{ data.Servers }}
-    </p>
+      <pre>{{ data.Servers | pretty }}</pre>
+    </div>
     <p>
       <b>Servers Have Changed:</b>
       {{ data.Servers_changed }}

@@ -1,6 +1,6 @@
 <template>
   <div v-if="data">
-    <p>{{ data }}</p>
+    <pre>{{ data | pretty }}</pre>
   </div>
 </template>
 <script src="./script.js"></script>
