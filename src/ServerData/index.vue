@@ -4,7 +4,7 @@
 
     <div>
       <b>Servers:</b>
-      <pre>{{ data.Servers | pretty }}</pre>
+      <pre>{{ data.Servers }}</pre>
     </div>
     <p>
       <b>Servers Have Changed:</b>

@@ -36,7 +36,7 @@ export default {
     getDomains() {
       const url1 = `http://localhost:8000/getDomains`;
       axios.get(url1).then((r) => {
-        console.log('domains', r.data);
+        // console.log('domains', r.data);
         Vue.set(this.domainData, 'domains', r.data);
       });
     },
