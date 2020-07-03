@@ -1,9 +1,9 @@
 <template>
   <div>
-    <p v-if="currentUsername == null">Enter a domain above to see their server data</p>
+    <p v-if="currentDomainName == null">Enter a domain above to see their server data</p>
     <p v-else>
-      Below are the results for {{ currentUsername }}
-      <server-data :data="githubData[currentUsername]"></server-data>
+      Below are the results for {{ currentDomainName }}
+      <server-data :data="serverData[currentDomainName]"></server-data>
     </p>
     <p>
       <b>Previously viewed domains.</b>

@@ -11,8 +11,8 @@ export default {
   },
   data() {
     return {
-      currentUsername: null,
-      githubData: {},
+      currentDomainName: null,
+      serverData: {},
       domainData: {},
     };
   },
@@ -20,17 +20,17 @@ export default {
     this.getDomains();
   },
   methods: {
-    onUsernameChange(name) {
-      this.currentUsername = name;
-      this.fetchGithubData(name);
+    onDomainNameChange(name) {
+      this.currentDomainName = name;
+      this.fetchServerData(name);
     },
-    fetchGithubData(name) {
+    fetchServerData(name) {
       // if we have data already, don't request again
-      if (this.githubData.hasOwnProperty(name)) return;
+      if (this.serverData.hasOwnProperty(name)) return;
 
       const url = `http://localhost:8000/search/${name}`;
       axios.get(url).then((r) => {
-        Vue.set(this.githubData, name, r.data);
+        Vue.set(this.serverData, name, r.data);
       });
     },
     getDomains() {
@@ -42,9 +42,9 @@ export default {
     },
   },
   created() {
-    bus.$on('new-username', this.onUsernameChange);
+    bus.$on('new-domainName', this.onDomainNameChange);
   },
   destroyed() {
-    bus.$off('new-username', this.onUsernameChange);
+    bus.$off('new-domainName', this.onDomainNameChange);
   },
 };

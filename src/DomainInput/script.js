@@ -4,13 +4,13 @@ export default {
   name: 'DomainInput',
   data() {
     return {
-      username: '',
+      domainName: '',
     };
   },
   methods: {
     onSubmit(event) {
-      if (this.username && this.username !== '') {
-        bus.$emit('new-username', this.username);
+      if (this.domainName && this.domainName !== '') {
+        bus.$emit('new-domainName', this.domainName);
       }
     },
   },
