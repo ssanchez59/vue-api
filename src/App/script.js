@@ -1,13 +1,13 @@
-import GithubInput from '../GithubInput/index.vue'
-import GithubOutput from '../GithubOutput/index.vue'
+import DomainInput from '../DomainInput/index.vue';
+import DomainOutput from '../DomainOutput/index.vue';
 
 export default {
   name: 'App',
   components: {
-    'github-input': GithubInput,
-    'github-output': GithubOutput,
+    'domain-input': DomainInput,
+    'domain-output': DomainOutput,
   },
   data() {
-    return {}
+    return {};
   },
-}
+};

@@ -1,12 +1,12 @@
 import bus from '../bus';
 import Vue from 'vue';
-import GithubUserData from '../GithubUserData/index.vue';
+import ServerData from '../ServerData/index.vue';
 import DomainData from '../DomainData/index.vue';
 
 export default {
-  name: 'GithubOutput',
+  name: 'DomainOutput',
   components: {
-    'github-user-data': GithubUserData,
+    'server-data': ServerData,
     'domain-data': DomainData,
   },
   data() {

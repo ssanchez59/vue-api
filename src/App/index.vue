@@ -1,7 +1,7 @@
 <template>
   <div>
-    <github-input></github-input>
-    <github-output></github-output>
+    <domain-input></domain-input>
+    <domain-output></domain-output>
   </div>
 </template>
 <script src="./script.js"></script>

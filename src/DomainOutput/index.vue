@@ -3,7 +3,7 @@
     <p v-if="currentUsername == null">Enter a domain above to see their server data</p>
     <p v-else>
       Below are the results for {{ currentUsername }}
-      <github-user-data :data="githubData[currentUsername]"></github-user-data>
+      <server-data :data="githubData[currentUsername]"></server-data>
     </p>
     <p>
       <b>Previously viewed domains.</b>

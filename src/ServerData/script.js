@@ -1,7 +1,7 @@
 export default {
-  name: 'GithubUserData',
+  name: 'ServerData',
   props: ['data'],
   data() {
-    return {}
-  }
-}
+    return {};
+  },
+};
