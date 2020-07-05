@@ -31,6 +31,7 @@ export default {
       const url = `http://localhost:8000/search/${name}`;
       axios.get(url).then((r) => {
         Vue.set(this.serverData, name, r.data);
+        this.getDomains();
       });
     },
     getDomains() {
