@@ -1,6 +1,11 @@
 <template>
   <form v-on:submit.prevent="onSubmit">
-    <input type="text" v-model="domainName" placeholder="Enter a domain here" />
+    <input
+      type="text"
+      onkeyup="this.value = this.value.toLowerCase();"
+      v-model="domainName"
+      placeholder="Enter a domain here"
+    />
     <button type="submit">Go!</button>
   </form>
 </template>
