@@ -23,6 +23,9 @@
       {{ data.Logo }}
     </p>
     <p>
+      <img v-bind:src="data.Logo" />
+    </p>
+    <p>
       <b>Title:</b>
       {{ data.Title }}
     </p>
