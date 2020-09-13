@@ -23,7 +23,7 @@
       {{ data.Logo }}
     </p>
     <p>
-      <img v-bind:src="data.Logo" />
+      <img v-bind:src="data.Logo" width="100" height="auto" />
     </p>
     <p>
       <b>Title:</b>
